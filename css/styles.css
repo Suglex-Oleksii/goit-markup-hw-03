@@ -10,13 +10,14 @@
 .body {
   background-color: var(--background-first-color);
   color: var(--title-color);
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", "Raleway", "Oleo Script", sans-serif;
 }
 .header {
   background-color: var(--background-header-color);
 }
 .header .logo-left {
   font-family: "Oleo Script";
+  font-weight: 400;
   font-size: 26px;
   line-height: 100%;
   color: var(--active-button-color);
@@ -24,6 +25,7 @@
 }
 .header .logo-right {
   font-family: "Raleway";
+  font-weight: 700;
   font-size: 26px;
   line-height: 100%;
   color: var(--title-color);
@@ -31,6 +33,7 @@
 }
 .aside-nav .link {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 14px;
   line-height: 100%;
   color: var(--title-color);
@@ -43,6 +46,7 @@
 .link-mail,
 .link-tel {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 14px;
   line-height: 100%;
   color: var(--text-color);
@@ -59,6 +63,7 @@
 }
 .main .title {
   font-family: "Roboto";
+  font-weight: 900;
   font-size: 44px;
   line-height: 116%;
   color: var(--background-header-color);
@@ -67,6 +72,7 @@
 .main .button {
   background-color: var(--background-second-color);
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: var(--title-color);
@@ -82,18 +88,21 @@
 }
 .section-1 .title {
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   color: var(--title-color);
 }
 .section-1 .subtitle .title {
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
   line-height: 100%;
   color: var(--title-color);
 }
 .section-1 .subtitle .text {
   font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
   line-height: 146%;
   color: var(--text-color);
@@ -103,6 +112,7 @@
 }
 .section-2 .title {
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   color: var(--title-color);
@@ -117,6 +127,7 @@
 }
 .section-3 .title {
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   color: var(--title-color);
@@ -128,12 +139,14 @@
 }
 .section-3 .subtitle-2 .title {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   color: var(--title-color);
 }
 .section-3 .subtitle-2 .text {
   font-family: "Roboto";
+  font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   color: var(--text-color);
@@ -144,10 +157,10 @@
 .section-4 .row .button {
   background-color: var(--background-second-color);
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
   line-height: 139%;
   color: var(--title-color);
-  align-content: center;
 }
 .section-4 .row .button:hover,
 .section-4 .row .button:focus {
@@ -164,12 +177,14 @@
 }
 .content .title {
   font-family: "Roboto";
+  font-weight: 700;
   font-size: 18px;
   line-height: 171%;
   color: var(--title-color);
 }
 .content .text {
   font-family: "Roboto";
+  font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: var(--text-color);
@@ -179,6 +194,7 @@
 }
 .footer .logo-left {
   font-family: "Oleo Script";
+  font-weight: 400;
   font-size: 26px;
   line-height: 100%;
   color: var(--active-button-color);
@@ -186,6 +202,7 @@
 }
 .footer .logo-right {
   font-family: "Raleway";
+  font-weight: 700;
   font-size: 26px;
   line-height: 100%;
   color: var(--background-header-color);
@@ -193,6 +210,7 @@
 }
 .footer .aside-address .link {
   font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
   line-height: 146%;
   color: var(--background-header-color);

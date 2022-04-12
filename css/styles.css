@@ -4,6 +4,9 @@ body {
   height: 100vh;
 }
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 1600px;
   height: 80px;
   background-color: #ffffff;
@@ -11,4 +14,8 @@ body {
 .logo {
   width: 145px;
   height: 31px;
+}
+.link {
+  width: 49px;
+  height: 16px;
 }

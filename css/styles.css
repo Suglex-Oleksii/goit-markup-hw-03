@@ -40,7 +40,8 @@
   text-decoration: none;
 }
 .aside-nav .link:hover,
-.aside-nav .link:focus {
+.aside-nav .link:focus,
+.aside-nav .link:active {
   color: var(--active-button-color);
 }
 .link-mail,
@@ -68,6 +69,9 @@
   line-height: 116%;
   color: var(--background-header-color);
   align-content: center;
+}
+.button {
+  cursor: pointer;
 }
 .main .button {
   background-color: var(--background-second-color);

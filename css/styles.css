@@ -14,8 +14,12 @@ body {
 .logo {
   width: 145px;
   height: 31px;
+  margin-left: 215px;
 }
 .link {
   width: 49px;
   height: 16px;
+  margin-left: 93px;
+  align-items: center;
+  justify-content: space-between;
 }

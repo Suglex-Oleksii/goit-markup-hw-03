@@ -1,25 +1,226 @@
-body {
-  margin: 0vmin;
-  width: 100vw;
-  height: 100vh;
+:root {
+  --title-color: #212121;
+  --text-color: #757575;
+  --active-button-color: #2196f3;
+  --background-footer-color: #2f303a;
+  --background-header-color: #ffffff;
+  --background-first-color: #e5e5e5;
+  --background-second-color: #f5f4fa;
+}
+.body {
+  background-color: var(--background-first-color);
+  color: var(--title-color);
+  font-family: "Roboto", "Raleway", "Oleo Script", sans-serif;
 }
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1600px;
-  height: 80px;
-  background-color: #ffffff;
+  background-color: var(--background-header-color);
 }
-.logo {
-  width: 145px;
-  height: 31px;
-  margin-left: 215px;
+.header .logo-left {
+  font-family: "Oleo Script";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  color: var(--active-button-color);
+  text-decoration: none;
 }
-.link {
-  width: 49px;
-  height: 16px;
-  margin-left: 93px;
-  align-items: center;
-  justify-content: space-between;
+.header .logo-right {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: var(--title-color);
+  text-decoration: none;
+}
+.aside-nav .link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--title-color);
+  text-decoration: none;
+}
+.aside-nav .link:hover,
+.aside-nav .link:focus,
+.aside-nav .link:active {
+  color: var(--active-button-color);
+}
+.link-mail,
+.link-tel {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.link-mail:hover,
+.link-mail:focus,
+.link-tel:hover,
+.link-tel:focus {
+  color: var(--active-button-color);
+}
+.main {
+  background-color: var(--background-footer-color);
+}
+.main .title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 116%;
+  color: var(--background-header-color);
+  align-content: center;
+}
+.button {
+  cursor: pointer;
+}
+.main .button {
+  background-color: var(--background-second-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--title-color);
+  align-content: center;
+}
+.main .button:hover,
+.main .button:focus {
+  background-color: var(--active-button-color);
+  color: var(--background-header-color);
+}
+.section-1 {
+  background-color: var(--background-first-color);
+}
+.section-1 .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+.section-1 .subtitle .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+.section-1 .subtitle .text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 146%;
+  color: var(--text-color);
+}
+.section-2 {
+  background-color: var(--background-first-color);
+}
+.section-2 .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+.section-2 .img {
+  width: 370px;
+  height: 294px;
+  top: 1061px;
+}
+.section-3 {
+  background-color: var(--background-second-color);
+}
+.section-3 .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+.section-3 .subtitle-2 .img {
+  width: 270px;
+  height: 260px;
+  top: 1635px;
+}
+.section-3 .subtitle-2 .title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+.section-3 .subtitle-2 .text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--text-color);
+}
+.section-4 {
+  background-color: var(--background-first-color);
+}
+.section-4 .row .button {
+  background-color: var(--background-second-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 139%;
+  color: var(--title-color);
+}
+.section-4 .row .button:hover,
+.section-4 .row .button:focus {
+  background-color: var(--active-button-color);
+  color: var(--background-header-color);
+}
+.content {
+  background-color: var(--background-first-color);
+}
+.content .img {
+  width: 370px;
+  height: 294px;
+  top: 262px;
+}
+.content .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 171%;
+  color: var(--title-color);
+}
+.content .text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text-color);
+}
+.footer {
+  background-color: var(--background-footer-color);
+}
+.footer .logo-left {
+  font-family: "Oleo Script";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  color: var(--active-button-color);
+  text-decoration: none;
+}
+.footer .logo-right {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: var(--background-header-color);
+  text-decoration: none;
+}
+.footer .aside-address .link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 146%;
+  color: var(--background-header-color);
+  text-decoration: none;
+}
+.footer .aside-address .link:hover,
+.footer .aside-address .link:focus {
+  color: var(--text-color);
 }

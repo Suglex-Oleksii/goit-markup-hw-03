@@ -7,13 +7,37 @@
   --background-first-color: #e5e5e5;
   --background-second-color: #f5f4fa;
 }
+*,
+*::before,
+*::after {
+  outline: 1px dashed red;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .body {
   background-color: var(--background-first-color);
   color: var(--title-color);
-  font-family: "Roboto", "Raleway", "Oleo Script", sans-serif;
+  font-family: "Roboto", "Raleway", sans-serif;
 }
 .header {
   background-color: var(--background-header-color);
+  display: inline-block;
+}
+.logo {
+  width: 145px;
 }
 .header .logo-left {
   font-family: "Oleo Script";
@@ -72,6 +96,7 @@
 }
 .button {
   cursor: pointer;
+  border-radius: 4px;
 }
 .main .button {
   background-color: var(--background-second-color);

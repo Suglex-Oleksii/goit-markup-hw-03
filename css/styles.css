@@ -2,9 +2,10 @@
   --title-color: #212121;
   --text-color: #757575;
   --active-button-color: #2196f3;
+  --hover-button-color: #188ce8;
   --background-footer-color: #2f303a;
   --background-header-color: #ffffff;
-  --background-first-color: #e5e5e5;
+  --background-first-color: none;
   --background-second-color: #f5f4fa;
 }
 *,
@@ -30,7 +31,7 @@ h4 {
 .body {
   background-color: var(--background-first-color);
   color: var(--title-color);
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .header {
   background-color: var(--background-header-color);
@@ -40,32 +41,34 @@ h4 {
   width: 145px;
 }
 .header .logo-left {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--active-button-color);
   text-decoration: none;
 }
 .header .logo-right {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--title-color);
   text-decoration: none;
 }
 .aside-nav .link {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1.1;
   color: var(--title-color);
   text-decoration: none;
 }
 .link-studio.current,
 .link-portfolio.current {
   color: var(--active-button-color);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
 }
 .aside-nav .link:hover,
 .aside-nav .link:focus,
@@ -74,10 +77,9 @@ h4 {
 }
 .link-mail,
 .link-tel {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1.1;
   color: var(--text-color);
   text-decoration: none;
 }
@@ -91,28 +93,37 @@ h4 {
   background-color: var(--background-footer-color);
 }
 .main .title {
-  font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
-  line-height: 116%;
+  line-height: 1.4;
   color: var(--background-header-color);
   align-content: center;
 }
-.button {
+.button.studio {
+  background-color: var(--active-button-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--background-header-color);
   cursor: pointer;
   border-radius: 4px;
 }
-.main .button {
+.button.studio:hover,
+.button.studio:focus {
+  background-color: var(--hover-button-color);
+  color: var(--background-header-color);
+}
+.button {
   background-color: var(--background-second-color);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--title-color);
-  align-content: center;
+  cursor: pointer;
+  border-radius: 4px;
 }
-.main .button:hover,
-.main .button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--active-button-color);
   color: var(--background-header-color);
 }
@@ -120,136 +131,132 @@ h4 {
   background-color: var(--background-first-color);
 }
 .section-1 .title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--title-color);
 }
 .section-1 .subtitle .title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1.1;
   color: var(--title-color);
 }
 .section-1 .subtitle .text {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 146%;
+  line-height: 1.7;
   color: var(--text-color);
 }
 .section-2 {
   background-color: var(--background-first-color);
 }
 .section-2 .title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--title-color);
 }
 .section-2 .img {
   width: 370px;
   height: 294px;
-  top: 1061px;
 }
 .section-3 {
   background-color: var(--background-second-color);
 }
 .section-3 .title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--title-color);
 }
 .section-3 .subtitle-2 .img {
   width: 270px;
   height: 260px;
-  top: 1635px;
 }
 .section-3 .subtitle-2 .title {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--title-color);
 }
 .section-3 .subtitle-2 .text {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--text-color);
+}
+.section-3 .page-1 {
+  list-style-type: none;
+  text-decoration: none;
 }
 .section-4 {
   background-color: var(--background-first-color);
 }
-.section-4 .row .button {
+.section-4 .btn .button {
   background-color: var(--background-second-color);
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 139%;
+  line-height: 1.6;
   color: var(--title-color);
 }
-.section-4 .row .button:hover,
-.section-4 .row .button:focus {
+.section-4 .btn .button:hover,
+.section-4 .btn .button:focus {
   background-color: var(--active-button-color);
   color: var(--background-header-color);
 }
-.content {
+.section-4 .content {
   background-color: var(--background-first-color);
 }
-.content .img {
+.section-4 .content .img {
   width: 370px;
   height: 294px;
   top: 262px;
 }
-.content .title {
-  font-family: "Roboto";
+.section-4 .content .title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 171%;
+  line-height: 2;
   color: var(--title-color);
 }
-.content .text {
-  font-family: "Roboto";
+.section-4 .content .text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.9;
   color: var(--text-color);
+}
+.content .page {
+  list-style-type: none;
+  text-decoration: none;
 }
 .footer {
   background-color: var(--background-footer-color);
 }
 .footer .logo-left {
-  font-family: "Oleo Script";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--active-button-color);
   text-decoration: none;
 }
 .footer .logo-right {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 1.2;
   color: var(--background-header-color);
   text-decoration: none;
 }
 .footer .aside-address .link {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 146%;
-  color: var(--background-header-color);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-style: normal;
 }
 .footer .aside-address .link:hover,
 .footer .aside-address .link:focus {
-  color: var(--text-color);
+  color: var(--background-header-color);
 }

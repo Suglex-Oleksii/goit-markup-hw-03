@@ -63,9 +63,7 @@ h4 {
   color: var(--title-color);
   text-decoration: none;
 }
-.link-studio.current {
-  color: var(--active-button-color);
-}
+.link-studio.current,
 .link-portfolio.current {
   color: var(--active-button-color);
 }

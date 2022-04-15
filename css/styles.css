@@ -28,6 +28,16 @@ h4 {
   margin-left: auto;
   margin-right: auto;
 }
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .body {
   background-color: var(--background-first-color);
   color: var(--title-color);
@@ -36,9 +46,8 @@ h4 {
 .header {
   background-color: var(--background-header-color);
   display: inline-block;
-}
-.logo {
-  width: 145px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header .logo-left {
   font-family: "Raleway", sans-serif;
@@ -55,6 +64,42 @@ h4 {
   line-height: 1.2;
   color: var(--title-color);
   text-decoration: none;
+}
+.nav {
+  display: flex;
+}
+.logo {
+  width: 145px;
+  margin-left: 215px;
+}
+.aside-nav {
+  display: flex;
+  align-items: center;
+}
+.link-studio {
+  width: 93px;
+  margin-left: 93px;
+  flex-wrap: wrap;
+}
+.link-pr {
+  width: 77px;
+  margin-left: 50px;
+}
+.link-cont {
+  width: 68px;
+  margin-left: 50px;
+}
+.aside-nav-2 {
+  display: flex;
+  align-items: center;
+}
+.link-mail {
+  width: 135px;
+  margin-left: 331px;
+}
+.link-tel {
+  width: 122px;
+  margin-left: 50px;
 }
 .aside-nav .link {
   font-weight: 500;
@@ -91,13 +136,21 @@ h4 {
 }
 .main {
   background-color: var(--background-footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
 }
-.main .title {
+.main .title-studio {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   color: var(--background-header-color);
-  align-content: center;
+  display: block;
+  margin: 0 auto;
+}
+.title-studio {
+  width: 696px;
+  text-align: center;
 }
 .button.studio {
   background-color: var(--active-button-color);
@@ -107,6 +160,9 @@ h4 {
   color: var(--background-header-color);
   cursor: pointer;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 .button.studio:hover,
 .button.studio:focus {
@@ -129,6 +185,12 @@ h4 {
 }
 .section-1 {
   background-color: var(--background-first-color);
+}
+.subtitle {
+  margin-top: 94px;
+}
+
+.advantage {
 }
 .section-1 .title {
   font-weight: 700;
@@ -164,6 +226,8 @@ h4 {
 .section-3 {
   background-color: var(--background-second-color);
 }
+.page-1 {
+}
 .section-3 .title {
   font-weight: 700;
   font-size: 36px;
@@ -192,6 +256,8 @@ h4 {
 }
 .section-4 {
   background-color: var(--background-first-color);
+}
+.page {
 }
 .section-4 .btn .button {
   background-color: var(--background-second-color);

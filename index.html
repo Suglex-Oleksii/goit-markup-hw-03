@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,68 +18,77 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
+    <!-- Section header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
+        <a class="logo" href="">Web<span class="logo-right">Studio</span></a>
         <nav class="nav">
-          <a href="" class="logo-left"
-            >Web<span class="logo-right">Studio</span></a
-          >
-          <ul style="list-style-type: none" class="aside-nav">
-            <li><a href="index.html" class="link-studio current">Студия</a></li>
-            <li>
-              <a href="portfolio.html" class="link-pr">Портфолио</a>
+          <ul class="navigator" style="list-style-type: none">
+            <li class="paragraph-navigator">
+              <a class="link-studio current" href="index.html">Студия</a>
             </li>
-            <li><a href="" class="link-cont">Контакты</a></li>
+            <li class="paragraph-navigator">
+              <a class="link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="paragraph-navigator">
+              <a class="link" href="">Контакты</a>
+            </li>
           </ul>
-          <ul style="list-style-type: none" class="aside-nav-2">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link-mail"
+          <ul class="contacts" style="list-style-type: none">
+            <li class="paragraph-contacts">
+              <a class="link-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a>
+            <li class="paragraph-contacts">
+              <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Unique page content -->
     <main>
-      <section class="main">
-        <div class="container">
-          <h1 class="title-studio">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="button studio">Заказать услугу</button>
+      <!-- Section hero -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="title-hero">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
+          <button class="button-hero" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="section-1">
-        <div class="container">
-          <h2 class="title">Наши преимущества</h2>
-          <ul style="list-style-type: none" class="subtitle">
-            <li class="advantage">
-              <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="text">
+
+      <!-- Section advantages -->
+      <section class="advantages">
+        <div class="container advantages-container">
+          <h2 class="title-large advantages" style="display: none">
+            Наши преимущества
+          </h2>
+          <ul class="list-advantages" style="list-style-type: none">
+            <li class="paragraph-advantages">
+              <h3 class="title-advantages-list">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="text-advantages-list">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="advantage">
-              <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="text">
+            <li class="paragraph-advantages">
+              <h3 class="title-advantages-list">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="text-advantages-list">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantage">
-              <h3 class="title">ПЛАНИРОВАНИЕ</h3>
-              <p class="text">
+            <li class="paragraph-advantages">
+              <h3 class="title-advantages-list">ПЛАНИРОВАНИЕ</h3>
+              <p class="text-advantages-list">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantage">
-              <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="text">
+            <li class="paragraph-advantages">
+              <h3 class="title-advantages-list">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="text-advantages-list">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -85,33 +96,35 @@
           </ul>
         </div>
       </section>
-      <section class="section-2">
-        <div class="container">
-          <h2 class="title">Чем мы занимаемся</h2>
-          <ul style="list-style-type: none">
-            <li>
+
+      <!-- Section presentation -->
+      <section class="presentation">
+        <div class="container presentation-container">
+          <h2 class="title-large presentation">Чем мы занимаемся</h2>
+          <ul class="list-presentation" style="list-style-type: none">
+            <li class="paragraph-presentation">
               <img
-                class="img"
-                src="./images/page-1/what-do-we-do-1.jpg"
+                class="img-presentation"
+                src="./images/studio/presentation/img-1.jpg"
                 alt="программист-работающий"
                 width="370"
                 height="294"
               />
             </li>
-            <li>
+            <li class="paragraph-presentation">
               <img
-                class="img"
-                src="./images/page-1/what-do-we-do-2.jpg"
-                alt="дизайнеры-разрабатывают-приложение-смартфоны"
+                class="img-presentation"
+                src="./images/studio/presentation/img-2.jpg"
+                alt="дизайнеры-разрабатывают-приложение-смартфона"
                 width="370"
                 height="294"
               />
             </li>
-            <li>
+            <li class="paragraph-presentation">
               <img
-                class="img"
-                src="./images/page-1/what-do-we-do-3.jpg"
-                alt="креативный-художник-выбором-рабочего-цвета-графического-планшета"
+                class="img-presentation"
+                src="./images/studio/presentation/img-3.jpg"
+                alt="креативный-художник-выбирает-цвет-графического-планшета"
                 width="370"
                 height="294"
               />
@@ -119,76 +132,92 @@
           </ul>
         </div>
       </section>
-      <section class="section-3">
-        <div class="container">
-          <h2 class="title">Наша команда</h2>
-          <ul style="list-style-type: none" class="subtitle-2">
-            <li>
-              <a href="" class="page-1">
-                <img
-                  class="img"
-                  src="./images/page-1/our-team-1.jpg"
-                  alt="Игорь Демьяненко"
+
+      <!-- Section team -->
+      <section class="team">
+        <div class="container team-container">
+          <h2 class="title-large team">Наша команда</h2>
+          <ul class="list-team" style="list-style-type: none">
+            <li class="paragraph-team">
+              <a class="card-team" href=""
+                ><img
+                  class="img-team"
+                  src="./images/studio/team/img-1.jpg"
+                  alt="Игорь Демьяненко-Дизайнер продукта"
                   width="270"
                   height="260"
                 />
-                <h3 class="title">Игорь Демьяненко</h3>
-                <p class="text">Product Designer</p>
+                <div class="box-team-list">
+                  <h3 class="title-team-list">Игорь Демьяненко</h3>
+                  <p class="text-team-list">Product Designer</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="page-1">
-                <img
-                  class="img"
-                  src="./images/page-1/our-team-2.jpg"
-                  alt="Ольга Репина"
+            <li class="paragraph-team">
+              <a class="card-team" href=""
+                ><img
+                  class="img-team"
+                  src="./images/studio/team/img-2.jpg"
+                  alt="Ольга Репина-Фронтенд разработчик"
                   width="270"
                   height="260"
                 />
-                <h3 class="title">Ольга Репина</h3>
-                <p class="text">Frontend Developer</p>
+                <div class="box-team-list">
+                  <h3 class="title-team-list">Ольга Репина</h3>
+                  <p class="text-team-list">Frontend Developer</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="page-1">
-                <img
-                  class="img"
-                  src="./images/page-1/our-team-3.jpg"
-                  alt="Николай Тарасов"
+            <li class="paragraph-team">
+              <a class="card-team" href=""
+                ><img
+                  class="img-team"
+                  src="./images/studio/team/img-3.jpg"
+                  alt="Николай Тарасов-Маркетинг"
                   width="270"
                   height="260"
                 />
-                <h3 class="title">Николай Тарасов</h3>
-                <p class="text">Marketing</p>
+                <div class="box-team-list">
+                  <h3 class="title-team-list">Николай Тарасов</h3>
+                  <p class="text-team-list">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="page-1">
-                <img
-                  class="img"
-                  src="./images/page-1/our-team-4.jpg"
-                  alt="Михаил Ермаков"
+            <li class="paragraph-team">
+              <a class="card-team" href=""
+                ><img
+                  class="img-team"
+                  src="./images/studio/team/img-4.jpg"
+                  alt="Михаил Ермаков-Дизайнер интерфейса"
                   width="270"
                   height="260"
                 />
-                <h3 class="title">Михаил Ермаков</h3>
-                <p class="text">UI Designer</p>
+                <div class="box-team-list">
+                  <h3 class="title-team-list">Михаил Ермаков</h3>
+                  <p class="text-team-list">UI Designer</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
+    <!-- Section footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="" class="logo-left"
-          >Web<span class="logo-right">Studio</span></a
-        >
+      <div class="container footer-container">
+        <a class="logo" href="">Web<span class="logo-right">Studio</span></a>
         <address>
-          <ul style="list-style-type: none" class="aside-address">
-            <li><a href="" class="link">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="" class="link">info@devstudio.com</a></li>
-            <li><a href="" class="link">+38 099 111 11 11</a></li>
+          <ul class="address" style="list-style-type: none">
+            <li class="paragraph-address">
+              <a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="paragraph-address">
+              <a class="link" href="">info@devstudio.com</a>
+            </li>
+            <li class="paragraph-address">
+              <a class="link" href="">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
